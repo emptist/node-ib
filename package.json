@@ -1,7 +1,7 @@
 {
   "name": "ib",
   "description": "Interactive Brokers TWS (or IB Gateway) API client library for Node.js",
-  "version": "0.1.8",
+  "version": "0.2.7",
   "license": "MIT",
   "author": {
     "name": "Pilwon Huh",
@@ -39,22 +39,24 @@
     "client",
     "library"
   ],
+  "main": "lib/index.js",
   "dependencies": {
-    "command-buffer": "~0.1.0",
-    "lodash": "~2.2.1"
+    "command-buffer": "^0.1.0",
+    "function-rate-limit": "^1.1.0",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
-    "colors": "~0.6.2",
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-mocha-test": "~0.7.0",
-    "matchdep": "~0.3.0",
-    "mocha": "~1.13.0",
-    "moment": "~2.4.0"
+    "chalk": "^2.3.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-mocha-test": "^0.13.3",
+    "matchdep": "^2.0.0",
+    "mocha": "^4.1.0",
+    "moment": "^2.20.1"
   },
   "scripts": {
-    "prepublish": "npm prune",
+    "prepare": "npm prune",
     "test": "grunt test"
   }
 }
